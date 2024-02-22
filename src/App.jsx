@@ -81,8 +81,11 @@ function AboutMe({language}) {
              and quick adaptation.`}</p>
           <br />
           <p>
-            {language ? `Tecnologías: ` : `Tecnologies: `} Node.js (Express), React (Framer Motion), Vanilla JavaScript y Python.
-            {language ? `Bases de Datos: ` :  `Databases: `} MongoDB, MariaDB, ORM (Sequelize), ODM (Moongose), etc.
+            {language ? `Las tecnologías que uso son Node.js (Express), React (Framer Motion), Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js (Express), React (Framer Motion), Vanilla JavaScript and Python. `} 
+          </p>
+          <br />
+          <p>
+            {language ? `Para Bases de Datos: ` :  `For Databases: `} MongoDB, MariaDB, MySQL, SQLite, ORM (Sequelize), ODM (Moongose).
           </p>
             <p className='see-cvs'>{language ? "— Ver CV en " : "— See CV in "}</p><a className="cv-language" href="assets\Cristaldo Pablo Martin (1).pdf" download={"Cristaldo Pablo Martín"}>{language ? "inglés" : "english"}</a>/<a href="assets\Cristaldo Pablo Martin.pdf" download="Cristaldo Pablo Martín" className='cv-language'>{language ? "español" : "spanish"}</a>
       </div>
@@ -108,7 +111,7 @@ function Projects({language}) {
         <div className="info-project">
           <p className="description-project">
             <a href={el.src} target="_blank" className='link-website'>{language ? "Ver Sitio Web" : "Open Website"}</a>
-            <a href={el.srcgithub} target='_blank' className='link-website'>{language ? "Código en GitHub" : "Code in GitHub"}</a>
+            <a href={el.srcgithub} target='_blank' className='link-website'>{language ? "Repositorio en GitHub" : "Repository in GitHub"}</a>
             <br />
             {language ? el.spanishdescription : el.englishdescription}
             <span className='tecnologies'>{language ? "Tecnologías" : "Tecnologies"}: {el.tecnologies}.</span>
