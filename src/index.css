@@ -204,6 +204,24 @@
   color: black;
 }
 
+.link-github {
+  background-color: rgb(255, 255, 255);
+  padding: .4rem;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  margin-right: .5rem;
+  border-bottom: thin solid black;
+  transition: all .5s ease;
+}
+
+.link-github:hover {
+  color: white;
+  border-bottom: thin solid white;
+}
+
+
 .tecnologies {
   background-color: white;
   color: black;

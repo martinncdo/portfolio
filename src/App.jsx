@@ -93,7 +93,7 @@ function AboutMe({language}) {
     <motion.img 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    className="photo-id" src="assets\photo.png" alt="" />
+    className="photo-id" src="assets\photo.webp" alt="" />
     </div>
   )
 }
@@ -111,7 +111,7 @@ function Projects({language}) {
         <div className="info-project">
           <p className="description-project">
             <a href={el.src} target="_blank" className='link-website'>{language ? "Ver Sitio Web" : "Open Website"}</a>
-            <a href={el.srcgithub} target='_blank' className='link-website'>{language ? "Repositorio en GitHub" : "Repository in GitHub"}</a>
+            <a href={el.srcgithub} target='_blank' className='link-github'>{language ? "Repositorio en GitHub" : "Repository in GitHub"}</a>
             <br />
             {language ? el.spanishdescription : el.englishdescription}
             <span className='tecnologies'>{language ? "Tecnologías" : "Tecnologies"}: {el.tecnologies}.</span>
