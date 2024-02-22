@@ -196,6 +196,12 @@
   display: inline-block;
   margin-bottom: .5rem;
   text-decoration: none;
+  margin-right: .5rem;
+  transition: all .5s ease;
+}
+
+.link-website:hover {
+  color: black;
 }
 
 .tecnologies {

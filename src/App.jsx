@@ -79,7 +79,11 @@ function AboutMe({language}) {
              (written and oral) that facilitates my development at 
              work. As a colleague I offer responsibility, sympathy 
              and quick adaptation.`}</p>
-
+          <br />
+          <p>
+            {language ? `Tecnologías: ` : `Tecnologies: `} Node.js (Express), React (Framer Motion), Vanilla JavaScript y Python.
+            {language ? `Bases de Datos: ` :  `Databases: `} MongoDB, MariaDB, ORM (Sequelize), ODM (Moongose), etc.
+          </p>
             <p className='see-cvs'>{language ? "— Ver CV en " : "— See CV in "}</p><a className="cv-language" href="assets\Cristaldo Pablo Martin (1).pdf" download={"Cristaldo Pablo Martín"}>{language ? "inglés" : "english"}</a>/<a href="assets\Cristaldo Pablo Martin.pdf" download="Cristaldo Pablo Martín" className='cv-language'>{language ? "español" : "spanish"}</a>
       </div>
     
@@ -104,6 +108,7 @@ function Projects({language}) {
         <div className="info-project">
           <p className="description-project">
             <a href={el.src} target="_blank" className='link-website'>{language ? "Ver Sitio Web" : "Open Website"}</a>
+            <a href={el.srcgithub} target='_blank' className='link-website'>{language ? "Código en GitHub" : "Code in GitHub"}</a>
             <br />
             {language ? el.spanishdescription : el.englishdescription}
             <span className='tecnologies'>{language ? "Tecnologías" : "Tecnologies"}: {el.tecnologies}.</span>
@@ -165,19 +170,22 @@ const webProjects = [
 
   El sitio fue creado con Vanilla JavaScript y CSS, y también utilicé Bootstrap en menor medida.
  
-  Para mostrar los proyectos realizados por No Cobro, escribí todos los datos de cada proyecto de forma estructurada en un JSON y los llamé usando fetch.`},
+  Para mostrar los proyectos realizados por No Cobro, escribí todos los datos de cada proyecto de forma estructurada en un JSON y los llamé usando fetch.`,
+  srcgithub: "https://github.com/martinncdo/vfinal-no.cobro"},
   {englishtitle: "DRINK SHOP", spanishtitle: "TIENDA DE BEBIDAS", src: "https://drinksandrosas.netlify.app/", tecnologies: "React, CSS (Grid CSS - Flexbox)", type: "Personal", 
   englishdescription: `Drinks and Rosas is a drink shop module that I invented to demostrate my capabilities with React. It is made with this same library, and CSS. 
 
   The theme of the website, the brand logo, and the entire design were created by myself. I used Adobe Photoshop to design the logo and modify some images on the website.`,
   spanishdescription: `Drinks and Rosas es un módulo de tienda de bebidas que inventé para demostrar mis capacidades con React. Está hecho con esta misma biblioteca y CSS.
 
-  El tema del sitio web, el logotipo de la marca y todo el diseño fueron creados por mí. Utilicé Adobe Photoshop para diseñar el logo y modificar algunas imágenes del sitio web.`},
+  El tema del sitio web, el logotipo de la marca y todo el diseño fueron creados por mí. Utilicé Adobe Photoshop para diseñar el logo y modificar algunas imágenes del sitio web.`,
+  srcgithub: "https://github.com/martinncdo/drinksandrosas"},
   {englishtitle: "TIC-TAC-TOE GAME", spanishtitle: "JUEGO TA-TE-TI", src: "https://citcateot.netlify.app/", tecnologies: "React, CSS", type: "Personal", 
   englishdescription: `Tic-tac-toe game created with React and CSS. It has two modes: single player and multiplayer.
 
   For the single player mode I used the minimax algorithm.`,
   spanishdescription: `Juego de tres en raya creado con React y CSS. Tiene dos modos: un jugador y multijugador.
 
-  Para el modo de un jugador utilicé el algoritmo minimax.`}
+  Para el modo de un jugador utilicé el algoritmo minimax.`,
+  srcgithub: "https://github.com/martinncdo/tictactoegame"}
 ]
