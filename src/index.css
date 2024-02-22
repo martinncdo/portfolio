@@ -1,0 +1,368 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+/* Reset */
+
+.page {
+  padding: 1rem;
+}
+
+.navbar {
+  display: none;
+}
+
+.hambur-menu {
+  display: none;
+}
+
+.btns-change-pages {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: none;
+  right: 2rem;
+  bottom: 1rem;
+}
+
+.btn-change-page {
+  text-align: left;
+  padding: 1rem;
+  border: none;
+  transition: all .5s ease;
+}
+
+.btn-change-page:hover {
+  opacity: .5;
+  cursor: pointer;
+  transform: translateX(-1rem);
+}
+
+.title-page {
+  font-family: "Prata";
+  font-size: 50px;
+  font-weight: 100;
+}
+
+/* Change language */
+
+.select-language {
+  position: fixed;
+  right: 7;
+  right: 10rem;
+  bottom: 1.5rem;
+  border: none;
+  padding: .5rem;
+}
+
+.options-languages {
+  position: fixed;
+  bottom: 4rem;
+  right: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease;
+  padding: .5rem;
+  padding-bottom: .2rem;
+}
+
+.select-language:hover + .options-languages {
+  opacity: 1;
+  visibility: visible;
+}
+
+.options-languages:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spanish, .english {
+  border: none;
+  transition: all .5s ease;
+}
+
+.spanish:hover, .english:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.spanish {
+  margin-bottom: 1rem;
+}
+
+/* About Page */
+
+.sub-title {
+  font-family: "Prata";
+  font-size: 35px;
+  font-weight: 100;
+  display: block;
+}
+
+.about {
+  display: flex;
+  position: relative;
+}
+
+.about-tiles, .about-info {
+  flex-basis: 50%;
+}
+
+.about-info {
+  margin: auto;
+  padding: 1rem;
+}
+
+.see-cvs {
+  margin-top: 5rem;
+  display: inline-block;
+  margin-right: .3rem;
+}
+
+.cv-language {
+  transition: all .5s ease;
+}
+
+.cv-language:hover {
+  opacity: .5;
+}
+
+.photo-id {
+  position: absolute;
+  height: 450px;
+  margin-top: 10rem;
+}
+
+/* Projects Page */
+
+.title-project {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Prata";
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: .1rem;
+  font-size: 18px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.iframe-project {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  display: block;
+  border: none;
+}
+
+.type-project {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+
+.card-project {
+  margin-bottom: 2rem;
+}
+
+.description-project {
+  padding: 1rem;
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.link-website {
+  background-color: black;
+  padding: .5rem;
+  color: white;
+  display: inline-block;
+  margin-bottom: .5rem;
+  text-decoration: none;
+}
+
+.tecnologies {
+  background-color: white;
+  color: black;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* CONTACT */
+
+.contact {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all .5s ease;
+}
+
+.contact:hover {
+  opacity: .5;
+}
+
+/* Responsive */
+
+@media (max-width: 575.98px) { 
+  .app {
+    position: relative;
+  }
+
+  /* Navbar */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hambur-menu {
+    display: block;
+    align-self: end;
+    padding: 1rem;
+  }
+
+  .change-page-mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all .5s ease;
+  }
+
+  .active-navbar {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+
+  .change-page-mobile > * {
+    text-decoration: none;
+    padding: .3rem;
+  }
+
+  .change-page-mobile:last-child {
+    margin-bottom: 1rem;
+  }
+
+  /* About */
+  .sub-title {
+    font-size: 25px;
+  }
+
+  /* Projects */
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-id {
+    display: none;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .iframe-project {
+    width: 350px;
+  }
+
+  .select-language {
+    display: block;
+  }
+
+  .options-languages {
+    display: block;
+  }
+
+  .btn-change-page {
+    display: none;
+  }
+
+  .title-project {
+    background-color: white;
+    color: black;
+  }
+
+  /* Change language */
+
+.select-language {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  border: none;
+  padding: .3rem;
+  border-bottom: thin solid white;
+  background-color: none;
+}
+
+.options-languages {
+  position: fixed;
+  bottom: 2.3rem;
+  right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease;
+  padding: .5rem;
+  padding-bottom: .2rem;
+}
+
+.select-language:hover + .options-languages {
+  opacity: 1;
+  visibility: visible;
+}
+
+.options-languages:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.spanish, .english {
+  border: none;
+  transition: all .5s ease;
+}
+
+.spanish:hover, .english:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.spanish {
+  margin-bottom: 1rem;
+}
+
+.english {
+  padding-bottom: .5rem;
+}
+
+/* CONTACT */
+
+.contact {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+}
