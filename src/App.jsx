@@ -87,7 +87,7 @@ function AboutMe({language}) {
           <p>
             {language ? `Para Bases de Datos: ` :  `For Databases: `} MongoDB, MariaDB, MySQL, SQLite, ORM (Sequelize), ODM (Moongose).
           </p>
-            <p className='see-cvs'>{language ? "— Ver CV en " : "— See CV in "}</p><a className="cv-language" href="assets\Cristaldo Pablo Martin (1).pdf" download={"Cristaldo Pablo Martín"}>{language ? "inglés" : "english"}</a>/<a href="assets\Cristaldo Pablo Martin.pdf" download="Cristaldo Pablo Martín" className='cv-language'>{language ? "español" : "spanish"}</a>
+            <p className='see-cvs'>{language ? "— Ver CV en " : "— See CV in "}</p><a className="cv-language" href="assets\CV English - Cristaldo Pablo Martín.pdf" download={"Cristaldo Pablo Martín"}>{language ? "inglés" : "english"}</a>/<a href="assets\CV Spanish - Cristaldo Pablo Martín.pdf" download="Cristaldo Pablo Martín" className='cv-language'>{language ? "español" : "spanish"}</a>
       </div>
     
     <motion.img 
