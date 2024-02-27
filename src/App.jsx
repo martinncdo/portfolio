@@ -81,7 +81,7 @@ function AboutMe({language}) {
              and quick adaptation.`}</p>
           <br />
           <p>
-            {language ? `Las tecnologías que uso son Node.js (Express), React (Framer Motion), Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js (Express), React (Framer Motion), Vanilla JavaScript and Python. `} 
+            {language ? `Las tecnologías que uso son Node.js, React, Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js, React, Vanilla JavaScript and Python. `} 
           </p>
           <br />
           <p>
