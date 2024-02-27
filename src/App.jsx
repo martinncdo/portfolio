@@ -107,7 +107,7 @@ function Projects({language}) {
       animate={{ opacity: 1 }}>
         <p className="title-project">{language ? el.spanishtitle : el.englishtitle}</p>
         {/* <p className="type-project">— {el.type} Project</p> */}
-        <a href={el.src}><iframe className="iframe-project" src={el.src}></iframe></a>
+        <a href={el.src}><iframe scrolling="no" className="iframe-project" src={el.src}></iframe></a>
         <div className="info-project">
           <p className="description-project">
             <a href={el.src} target="_blank" className='link-website'>{language ? "Ver Sitio Web" : "Open Website"}</a>
@@ -144,6 +144,7 @@ function Contact({language}) {
       </h2>
       <a className="contact" href="mailto: cristaldopmartin@gmail.com" target='_blank'>{language ? "— Enviar Email" : "— Send Mail"}</a>
       <a className="contact" href="https://github.com/martinncdo" target='_blank'>{language ? "— Perfil de GitHub" : "— GitHub Profile"}</a>
+      <a className="contact" href="https://www.linkedin.com/in/martín-cristaldo-546996290" target='_blank'>{language ? "— Perfil de LinkdIn" : "— LinkdIn Profile"}</a>
     </motion.div>
   )
 }
