@@ -66,7 +66,7 @@ function AboutMe({language}) {
       <div className='about-info'>
         <p>
           {language ? `Mi nombre es Martín Cristaldo, y soy un desarrollador full stack de Argentina, Misiones. 
-          Manejo eficientemente la lógica de programación para el backend, y tengo gran creatividad y gusto parar crear diseños frontend. 
+          Manejo eficientemente la lógica de programación para el backend, y tengo gran creatividad y gusto para crear diseños frontend. 
           Además, tengo un excelente conocimiento de bases de datos relacionales y no relacionales.` :
           `My name is Martín Cristaldo, and
           I am a full stack developer from Argentina, Misiones. 
