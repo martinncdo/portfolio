@@ -81,7 +81,7 @@ function AboutMe({language}) {
              and quick adaptation.`}</p>
           <br />
           <p>
-            {language ? `Las tecnologías que uso son Node.js, React, Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js, React, Vanilla JavaScript and Python. `} 
+            {language ? `Las tecnologías que uso son Node.js, React.js, React Native, Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js, React, React Native, Vanilla JavaScript and Python. `} 
           </p>
           <br />
           <p>
@@ -93,7 +93,7 @@ function AboutMe({language}) {
     <motion.img 
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    className="photo-id" src="assets\photo.webp" alt="" />
+    className="photo-id" src="assets\photo.jpg" alt="" />
     </div>
   )
 }
