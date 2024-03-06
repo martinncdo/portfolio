@@ -188,28 +188,20 @@ function ChangePages({ setPage, language }) {
 export default App
 
 const webProjects = [
-  {englishtitle: "AUDIOVISUAL ENTREPRENEURSHIP", spanishtitle: "EMPRENDIMIENTO AUDIOVISUAL", src: "https://nocobro.com.ar/", tecnologies: "Vanilla JavaScript, CSS (Flexbox), Bootstrap", type: "Client", 
-  englishdescription: `No Cobro is an audiovisual production entrepreneurship, it makes works such as short films and interviews with people with interesting stories to tell.
+  {englishtitle: "No Cobro: Audiovisual Entrepreneurship", spanishtitle: "No Cobro: Emprendimiento Audiovusal", src: "https://nocobro.com.ar/", tecnologies: "Vanilla JavaScript, CSS (Flexbox), Bootstrap", type: "Client", 
+  englishdescription: `Website made for "No Cobro" entrepreneurship. "No Cobro" makes works such as short films and interviews with people with interesting stories to tell.
 
-  The site was built with vanilla JavaScript, CSS and I used Bootstrap to a lesser extent.
-  
-  To show the projects made by No Cobro, I wrote all the data for each project in a structured way in a JSON, and called them using fetch.`,
+  The data of each project is structured in JSON format, and is called using fetch.`,
 
-  spanishdescription: `No Cobro es un emprendimiento de producción audiovisual, que realiza trabajos como cortometrajes y entrevistas a personas con historias interesantes que contar.
+  spanishdescription: `Sitio Web hecho para el emprendimiento "No Cobro". "No Cobro" realiza trabajos como cortometrajes y entrevistas a personas con historias interesantes que contar.
 
-  El sitio fue creado con Vanilla JavaScript y CSS, y también utilicé Bootstrap en menor medida.
- 
-  Para mostrar los proyectos realizados por No Cobro, escribí todos los datos de cada proyecto de forma estructurada en un JSON y los llamé usando fetch.`,
+  Los datos de cada proyecto están estructurados en formato JSON, y son llamados con la utilización de fetch.`,
   srcgithub: "https://github.com/martinncdo/vfinal-no.cobro"},
-  {englishtitle: "DRINK SHOP", spanishtitle: "TIENDA DE BEBIDAS", src: "https://drinksandrosas.netlify.app/", tecnologies: "React, CSS (Grid CSS - Flexbox)", type: "Personal", 
-  englishdescription: `Drinks and Rosas is a drink shop module that I invented to demostrate my capabilities with React. It is made with this same library, and CSS. 
-
-  The theme of the website, the brand logo, and the entire design were created by myself. I used Adobe Photoshop to design the logo and modify some images on the website.`,
-  spanishdescription: `Drinks and Rosas es un módulo de tienda de bebidas que inventé para demostrar mis capacidades con React. Está hecho con esta misma biblioteca y CSS.
-
-  El tema del sitio web, el logotipo de la marca y todo el diseño fueron creados por mí. Utilicé Adobe Photoshop para diseñar el logo y modificar algunas imágenes del sitio web.`,
+  {englishtitle: "Drinks and Rosas: E-Commerce", spanishtitle: "Drinks and Rosas: E-Commerce", src: "https://drinksandrosas.netlify.app/", tecnologies: "ReactJS, CSS (Grid CSS, Flexbox)", type: "Personal", 
+  englishdescription: `Drinks store module made with React. The brand logo was created with Adobe Photoshop, and Figma was used to design the website.`,
+  spanishdescription: `Módulo de tienda de bebidas hecho con React. El logo de la marca fue creado con Adobe Photoshop, y para el diseño del sitio web se utilizó Figma.`,
   srcgithub: "https://github.com/martinncdo/drinksandrosas"},
-  {englishtitle: "TIC-TAC-TOE GAME", spanishtitle: "JUEGO TA-TE-TI", src: "https://citcateot.netlify.app/", tecnologies: "React, CSS", type: "Personal", 
+  {englishtitle: "Tic-Tac-Toe Game", spanishtitle: "Juego Ta-Te-Ti", src: "https://citcateot.netlify.app/", tecnologies: "ReactJS, CSS", type: "Personal", 
   englishdescription: `Tic-tac-toe game created with React and CSS. It has two modes: single player and multiplayer.
 
   For the single player mode I used the minimax algorithm.`,
