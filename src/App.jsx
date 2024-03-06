@@ -188,7 +188,7 @@ function ChangePages({ setPage, language }) {
 export default App
 
 const webProjects = [
-  {englishtitle: "No Cobro: Audiovisual Entrepreneurship", spanishtitle: "No Cobro: Emprendimiento Audiovusal", src: "https://nocobro.com.ar/", tecnologies: "Vanilla JavaScript, CSS (Flexbox), Bootstrap", type: "Client", 
+  {englishtitle: "No Cobro: Audiovisual Entrepreneurship", spanishtitle: "No Cobro: Emprendimiento Audiovisual", src: "https://nocobro.com.ar/", tecnologies: "Vanilla JavaScript, CSS (Flexbox), Bootstrap", type: "Client", 
   englishdescription: `Website made for "No Cobro" entrepreneurship. "No Cobro" makes works such as short films and interviews with people with interesting stories to tell.
 
   The data of each project is structured in JSON format, and is called using fetch.`,
