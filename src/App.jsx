@@ -8,15 +8,19 @@ function App() {
   let viewPage;
 
   if (Page === "about" || !Page) {
-    viewPage = <AboutMe setPage={setPage} language={Language}></AboutMe>
+    viewPage = <AboutMe language={Language}></AboutMe>
   }
 
   else if (Page === "projects") {
-    viewPage = <Projects setPage={setPage} language={Language}></Projects>
+    viewPage = <Projects language={Language}></Projects>
   }
 
   else if (Page === "contact") {
-    viewPage = <Contact setPage={setPage} language={Language}></Contact>
+    viewPage = <Contact language={Language}></Contact>
+  }
+
+  else if (Page === "education") {
+    viewPage = <Education language={Language}></Education>
   }
 
   function activeNavbar() {
@@ -30,6 +34,7 @@ function App() {
         <div className="change-page-mobile">
           <a href="#" onClick={() => setPage("about")}>{Language ? "Sobre mí" : "About"}</a>
           <a href="#" onClick={() => setPage("projects")}>{Language ? "Proyectos" : "Projects"}</a>
+          <a href="#" onClick={() => setPage("education")}>{Language ? "Estudios" : "Education"}</a>
           <a href="#" onClick={() => setPage("contact")}>{Language ? "Contacto" : "Contact"}</a>
         </div>
       </div>
@@ -149,12 +154,32 @@ function Contact({language}) {
   )
 }
 
+function Education({language}) {
+
+  return (
+    <motion.div className='page'
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}>
+      <h2 className='title-page'>
+        {language ? "ESTUDIOS" : "EDUCATION"}
+      </h2>
+      <br />
+      <p className="education">{language ? "— Tecnicatura en Desarrollo de Software (2022 - actualidad)" : "— Technique in Software Development (2022 - present)"}</p> | <a className="linkeduc" href="https://www.roquegonzalez.com.ar/nivel-superior/tecnicatura-superior-desarrollo-software/" target='_blank'>{language ? "Ver programa" : "See program"}</a>
+      <br />
+      <p className="education">{language ? "— Curso Diseño UX/UI" : "— UX/UI Design Course"}</p> | <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\UXUI Course.pdf" target='_blank'>{language ? "Ver certificado" : "See certificate"}</a>
+      <br />
+      <p className="education">{language ? "— Curso Inglés Beginners" : "— English Beginners Course"}</p> |  <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\Inglés Beginners.pdf" target='_blank'>{language ? "Ver certificado" : "See certificate"}</a>
+    </motion.div>
+  )
+}
+
 function ChangePages({ setPage, language }) {
 
   return (
     <motion.div className='btns-change-pages'>
       <button className='btn-change-page' onClick={() => setPage("about")}>{language ? "Sobre mí" : "About"}</button>
       <button className='btn-change-page' onClick={() => setPage("projects")}>{language ? "Proyectos" : "Projects"}</button>
+      <button className='btn-change-page' onClick={() => setPage("education")}>{language ? "Estudios" : "Education"}</button>
       <button className='btn-change-page' onClick={() => setPage("contact")}>{language ? "Contacto" : "Contact"}</button>
     </motion.div>
   )
