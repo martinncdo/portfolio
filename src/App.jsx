@@ -202,10 +202,10 @@ const webProjects = [
   spanishdescription: `Módulo de tienda de bebidas hecho con React. El logo de la marca fue creado con Adobe Photoshop, y para el diseño del sitio web se utilizó Figma.`,
   srcgithub: "https://github.com/martinncdo/drinksandrosas"},
   {englishtitle: "Tic-Tac-Toe Game", spanishtitle: "Juego Ta-Te-Ti", src: "https://citcateot.netlify.app/", tecnologies: "ReactJS, CSS", type: "Personal", 
-  englishdescription: `Tic-tac-toe game created with React and CSS. It has two modes: single player and multiplayer.
+  englishdescription: `Tic-Tac-Toe game created with React. It has two modes: single player and multiplayer.
 
   For the single player mode I used the minimax algorithm.`,
-  spanishdescription: `Juego de tres en raya creado con React y CSS. Tiene dos modos: un jugador y multijugador.
+  spanishdescription: `Juego Ta-Te-Ti creado con React. Tiene dos modos: un jugador y multijugador.
 
   Para el modo de un jugador utilicé el algoritmo minimax.`,
   srcgithub: "https://github.com/martinncdo/tictactoegame"}
