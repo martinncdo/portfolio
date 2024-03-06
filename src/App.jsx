@@ -86,7 +86,7 @@ function AboutMe({language}) {
              and quick adaptation.`}</p>
           <br />
           <p>
-            {language ? `Las tecnologías que uso son Node.js, React.js, React Native, Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js, React, React Native, Vanilla JavaScript and Python. `} 
+            {language ? `Las tecnologías que uso son Node.js, ReactJS, React Native, Vanilla JavaScript y Python. ` : `The tecnologies I use are Node.js, ReactJS, React Native, Vanilla JavaScript and Python. `} 
           </p>
           <br />
           <p>
@@ -164,11 +164,11 @@ function Education({language}) {
         {language ? "ESTUDIOS" : "EDUCATION"}
       </h2>
       <br />
-      <p className="education">{language ? "— Tecnicatura en Desarrollo de Software (2022 - actualidad)" : "— Technique in Software Development (2022 - present)"}</p> | <a className="linkeduc" href="https://www.roquegonzalez.com.ar/nivel-superior/tecnicatura-superior-desarrollo-software/" target='_blank'>{language ? "Ver programa" : "See program"}</a>
+      <p className="education">{language ? "— Tecnicatura en Desarrollo de Software (2022 - actualidad)" : "— Technique in Software Development (2022 - present)"}</p> <a className="linkeduc" href="https://www.roquegonzalez.com.ar/nivel-superior/tecnicatura-superior-desarrollo-software/" target='_blank'>{language ? "| Ver programa" : "| See program"}</a>
       <br />
-      <p className="education">{language ? "— Curso Diseño UX/UI" : "— UX/UI Design Course"}</p> | <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\UXUI Course.pdf" target='_blank'>{language ? "Ver certificado" : "See certificate"}</a>
+      <p className="education">{language ? "— Curso Diseño UX/UI" : "— UX/UI Design Course"}</p> <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\UXUI Course.pdf" target='_blank'>{language ? "| Ver certificado" : "| See certificate"}</a>
       <br />
-      <p className="education">{language ? "— Curso Inglés Beginners" : "— English Beginners Course"}</p> |  <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\Inglés Beginners.pdf" target='_blank'>{language ? "Ver certificado" : "See certificate"}</a>
+      <p className="education">{language ? "— Curso Inglés Beginners" : "— English Beginners Course"}</p>  <a className="linkeduc" download="Cristaldo Pablo Martín | Certificate" href="assets\Inglés Beginners.pdf" target='_blank'>{language ? "| Ver certificado" : "| See certificate"}</a>
     </motion.div>
   )
 }

@@ -249,13 +249,7 @@ iframe {
 /* EDUCATION */
 
 .education {
-  padding: 1rem;
   padding-right: 0;
-  display: inline;
-}
-
-.institute {
-  display: inline-block;
 }
 
 .linkeduc {
@@ -264,6 +258,8 @@ iframe {
   transition: all .5s ease;
   margin-bottom: 1rem;
   display: inline-block;
+  padding-left: 1rem;
+  padding-top: .3rem;
 }
 
 .linkeduc:hover {
