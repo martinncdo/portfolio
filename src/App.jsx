@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 function App() {
   const [Page, setPage] = useState(undefined);
-  const [Language, setLanguage] = useState(false);
+  const [Language, setLanguage] = useState(true);
 
   let viewPage;
 
