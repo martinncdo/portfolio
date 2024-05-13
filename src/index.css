@@ -16,6 +16,7 @@ iframe {
 /* Reset */
 
 .page {
+  position: relative;
   padding: 1rem;
 }
 
@@ -53,6 +54,7 @@ iframe {
   font-family: "Prata";
   font-size: 50px;
   font-weight: 100;
+  margin-top: .5rem;
 }
 
 /* Change language */
@@ -122,7 +124,7 @@ iframe {
 }
 
 .about-info {
-  margin: auto;
+  margin-left: 6rem;
   padding: 1rem;
 }
 
@@ -330,6 +332,14 @@ iframe {
 
   .about {
     flex-direction: column;
+  }
+
+  .about-info {
+    margin: auto;
+  }
+
+  .about-titles {
+    margin: .9rem;
   }
 
   .iframe-project {
