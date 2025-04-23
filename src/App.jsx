@@ -7,7 +7,7 @@ function App() {
 
   let viewPage;
 
-  if (Page === "about" || !Page) {
+  if (Page === 'about' || !Page) {
     viewPage = <AboutMe language={Language}></AboutMe>
   }
 
